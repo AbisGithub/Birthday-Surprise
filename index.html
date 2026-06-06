@@ -776,12 +776,37 @@ function renderTimelineStep() {
 }
 
 function advanceStoryStep() {
-    if(currentStoryIndex < storyTimeline.length - 1) {
-        currentStoryIndex++;
-        renderTimelineStep();
-    } else {
-        alert("Okayy I got the response! you will get the message later!"); thecurrentStoryIndex;
-    }
+
+    const memoryWorld =
+    document.getElementById(
+    "memoryWorld"
+    );
+
+    memoryWorld.style.opacity =
+    "0";
+
+    setTimeout(() => {
+
+        if(
+        currentStoryIndex <
+        storyTimeline.length - 1
+        ){
+
+            currentStoryIndex++;
+
+            renderTimelineStep();
+
+            memoryWorld.style.opacity =
+            "1";
+
+        } else {
+
+            alert(
+            "Okayy i got the response. you will get the message later! 🩷✨"
+            );
+        }
+
+    }, 350);
 }
 
 /* FLOATING OBJECT GENERATOR */
