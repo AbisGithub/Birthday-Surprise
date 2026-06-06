@@ -25,7 +25,7 @@ body{
     align-items:center;
     position:relative;
     transition: background 1.8s ease;
-    transform: 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 /* CARD */
@@ -276,7 +276,6 @@ button:active{
 
 /* SCROLLABLE CARD FEED */
 .idiot-card {
-  .idiot-card::before
     width: 100%;
     max-height: 72vh; 
    
@@ -298,7 +297,6 @@ button:active{
     display: flex;
     flex-direction: column;
     align-items: center;
-        will-change: scroll-position;
 
     scroll-behavior: smooth;
 }
@@ -499,7 +497,7 @@ const storyTimeline = [
         chapter: "Ummm... Enna solrathu nuh thrla but ",
         text: "ts tiny world was made for u special 😭🩷",
         sub: "look at u bitch u are freakin cute 😭🎀",
-        btnText: "start our little story ✨",
+        btnText: "Start our little story ✨",
         imgUrl: "intropic.jpg",
         videoUrl: "introvdo.mp4", /* 🎬 Stacks right underneath intropic.jpg perfectly! */
         bgColor: "linear-gradient(135deg, #f6e7eb, #edd6dd, #f7f4f5)"
@@ -514,21 +512,70 @@ const storyTimeline = [
         bgColor: "linear-gradient(135deg, #fceade, #f3d1cc, #fbf0ea)"
     },
     {
-      chapter: "Certified Chaos 😭✨",
+    chapter: "Certified chaos 😭👊",
 
-    text: "warning ⚠️ too much silliness ahead 😭",
+    text:
+    "Paaru, paaka evlo alaga irukka 😭 but neethan enna paaliyal vankodumai pannura 😭😭",
 
-    sub: "honestly... how are we still alive after all our chaos 😤",
-    
+    sub:
+    "im gonna tell ur mom that u always abuse me 😭👉🍆✂️",
 
-    btnText: "continue the nonsense 😚",
+    btnText:
+    "continue the nonsense 😚💗",
 
-    imgUrl: "chaos.jpg",
+    imgUrl:
+    "chaos.jpg",
 
-    videoUrl: "chaosvdo.mp4",
+    videoUrl:
+    "chaosvdo.mp4",
 
-    bgColor:  "linear-gradient(135deg,  #f7dce5, #eed3db, #f9eef2)"
-}
+    bgColor:
+    "linear-gradient(135deg, #f7dce5, #eed3db, #f9eef2)"
+},
+ {
+    chapter:
+    "Wait a Sec... 😭🩷",
+
+    text:
+    "somehow... somewhere between all the chaos and random memories 😭",
+
+    sub:
+    "u quietly became someone really really important to me 😭💗",
+
+    btnText:
+    "one more thing... 🎀",
+
+    imgUrl:
+    "important.jpg",
+
+    videoUrl:
+    "importantvdo.mp4",
+
+    bgColor:
+    "linear-gradient(135deg, #f8d9df, #f3d6e3, #fdf1f4)"
+},
+{
+    chapter:
+    "Soooo... 😭",
+
+    text:
+    "there's actually something i've been wanting to tell u for a really long time 😭🩷",
+
+    sub:
+    "butttt 😭 not now... i'll tell u something important tonight 🌙✨  promise.",
+
+    btnText:
+    "Will u wait until tonight😭💗",
+
+    imgUrl:
+    "question.jpg",
+
+    videoUrl:
+    "questionvdo.mp4",
+
+    bgColor:
+    "linear-gradient(135deg, #fbe1e6, #f5d4dd, #fff4f6)"
+},
 ];
 
 let currentStoryIndex = 0;
@@ -733,7 +780,7 @@ function advanceStoryStep() {
         currentStoryIndex++;
         renderTimelineStep();
     } else {
-        alert("Happy Birthday Person! 🩷✨");
+        alert("Okayy I got the response! you will get the message later!"); thecurrentStoryIndex;
     }
 }
 
